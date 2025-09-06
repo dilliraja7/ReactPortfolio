@@ -1,0 +1,85 @@
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #edeaea;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f0f4ff);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.1);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-intro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 114, 255, 0.2);
+}
+
+.about h3 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #edeaea;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.edu-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.edu-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  color: #00c6ff;
+}
+
+.edu-card p {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.edu-card span {
+  font-size: 0.95rem;
+  color: #333;
+}

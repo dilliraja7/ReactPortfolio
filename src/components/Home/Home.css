@@ -1,0 +1,114 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 10%;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.home-text {
+  max-width: 50%;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.home-text .highlight {
+  color: #ffdd57; /* Golden Yellow highlight */
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #c6e2ff; /* Light blue */
+}
+
+.desc {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #ffdd57, #fcb045);
+  color: #333;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(90deg, #fcb045, #ffdd57);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #ffdd57;
+  color: #ffdd57;
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 221, 87, 0.2);
+  color: white;
+}
+
+/* Profile Image */
+.home-image img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .home-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .home-image img {
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+  }
+}

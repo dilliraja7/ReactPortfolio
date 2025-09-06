@@ -1,0 +1,86 @@
+.achievements {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #edeaea;
+  position: relative;
+}
+
+.achievements h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Achievements list in card grid */
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.achievements li {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative top border */
+.achievements li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  transition: all 0.4s ease;
+}
+
+.achievements li:hover::before {
+  height: 100%;
+  opacity: 0.05;
+}
+
+/* Hover effects */
+.achievements li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,123,255,0.25);
+  color: #007bff;
+}
+
+/* Smooth fade-in animation */
+.achievements li {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.achievements li:nth-child(1) { animation-delay: 0.2s; }
+.achievements li:nth-child(2) { animation-delay: 0.4s; }
+.achievements li:nth-child(3) { animation-delay: 0.6s; }
+.achievements li:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
