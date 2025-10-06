@@ -7,7 +7,15 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul.open {
+  display: flex;
+}
+.ham {
+  display: none;
+  color: white;
 }
 
 .navbar h2 {
@@ -19,7 +27,6 @@
   display: flex;
   list-style: none;
 }
-
 .navbar ul li {
   margin-left: 20px;
 }
@@ -33,4 +40,27 @@
 .navbar ul li a:hover {
   color: #00bcd4;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    background: #222;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .ham {
+    display: block;
+    cursor: pointer;
+  }
 }
