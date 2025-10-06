@@ -6,7 +6,7 @@ const Resume = () => (
     <div className="resume-container">
       <h2>My Resume</h2>
       <a 
-        href="/DILLIRAJA_RESUME.pdf"   
+        href=" /ReactPortfolio/dilli.pdf "   
         target="_blank" 
         rel="noopener noreferrer" 
         className="btn"
